@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://mferna89.github.io/cse445_a4/Hotels.xsd">
+
+	<!-- Error 1 -->
+
+	<Hotel Rating="4.2">
+		<Name>Westin</Name>
+		<Phone>480-968-8885</Phone>
+		<Phone>800-937-8461</Phone>
+		<Address NearstAirport="Sky Harbor">
+			<Number>11</Number>
+			<Street>E. 7th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.4">
+		<Name>Hyatt Place</Name>
+		<Phone>415-767-2000</Phone>
+		<Address>
+		<!-- Error 2: Required attribute missing -->
+			<Number>701</Number>
+			<Street>3rd St</Street>
+			<City>San Francisco</City>
+			<State>CA</State>
+			<Zip>94107</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.0">
+		<Name>Courtyard Dallas</Name>
+		<!-- Error 3: No phone -->
+		<Address NearstAirport="DAL">
+			<Number>2150</Number>
+			<Street>Market Center Boulevard</Street>
+			<City>Dallas</City>
+			<State>TX</State>
+			<Zip>75207</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.2">
+		<Name>Hotel Crescent Court</Name>
+		<Phone>214-871-3200</Phone>
+		<Phone>833-372-3084</Phone>
+		<!-- Error 4: We do not close address -->
+		<Address NearstAirport="DAL">
+			<Number>400</Number>
+			<Street>Crescent Court</Street>
+			<City>Dallas</City>
+			<State>TX</State>
+			<Zip>75201</Zip>
+
+	</Hotel>
+
+	<Hotel Rating="3.9">
+		<!-- Error 5: Duplicated Name -->
+		<Name>Timbri Hotel</Name>
+		<Name>Nombre Duplicado</Name>
+		<Phone>415-475-0000</Phone>
+		<Address NearstAirport="SFO">
+			<Number>33</Number>
+			<Street>Turk Street</Street>
+			<City>San Francisco</City>
+			<State>CA</State>
+			<Zip>94102</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Los siguientes hoteles están correctos (no se modifican para no agregar más de 5 errores) -->
+
+	<Hotel>
+		<Name>Luxor Hotel</Name>
+		<Phone>702-262-4000</Phone>
+		<Address NearstAirport="LAS">
+			<Number>3900</Number>
+			<Street>S Las Vegas Blvd</Street>
+			<City>Las Vegas</City>
+			<State>NV</State>
+			<Zip>89119</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.8">
+		<Name>Bellagio</Name>
+		<Phone>888-987-6667</Phone>
+		<Phone>702-693-7111</Phone>
+		<Address NearstAirport="LAS">
+			<Number>3600</Number>
+			<Street>S Las Vegas Blvd</Street>
+			<City>Las Vegas</City>
+			<State>NV</State>
+			<Zip>89109</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.1">
+		<Name>La Quinta Inn</Name>
+		<Phone>312-558-1020</Phone>
+		<Address NearstAirport="ORD">
+			<Number>1</Number>
+			<Street>S Franklin St</Street>
+			<City>Chicago</City>
+			<State>IL</State>
+			<Zip>60606</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.0">
+		<Name>Moxy NYC Times Square</Name>
+		<Phone>212-967-6699</Phone>
+		<Address NearstAirport="JFK">
+			<Number>485</Number>
+			<Street>7th Ave</Street>
+			<City>New York</City>
+			<State>NY</State>
+			<Zip>10018</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel>
+		<Name>Pod 51</Name>
+		<Phone>212-355-0300</Phone>
+		<Address NearstAirport="JFK">
+			<Number>230</Number>
+			<Street>E 51st St</Street>
+			<City>New York</City>
+			<State>NY</State>
+			<Zip>10022</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.4">
+		<Name>Paris Las Vegas</Name>
+		<Phone>877-796-2096</Phone>
+		<Address NearstAirport="LAS">
+			<Number>3655</Number>
+			<Street>S Las Vegas Blvd</Street>
+			<City>Las Vegas</City>
+			<State>NV</State>
+			<Zip>89109</Zip>
+		</Address>
+	</Hotel>
+
+</Hotel>
